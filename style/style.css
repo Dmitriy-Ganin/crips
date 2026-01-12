@@ -405,6 +405,9 @@ button {
 .shop {
   width: 394px;
   border-right: 2px solid rgba(196, 196, 196, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .shop-title {
@@ -413,6 +416,53 @@ button {
   font-size: 24px;
   vertical-align: middle;
   color: rgba(0, 0, 0, 1);
+}
+
+.shop-filters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+
+.standart-checkbox {
+  display: none;
+}
+
+.filter-checkbox {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(130, 130, 130, 1);
+}
+
+.standart-checkbox:checked+.filter-checkbox {
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
+}
+
+.standart-checkbox:checked + .filter-checkbox::after {
+  content: '';
+  background-image: url("/bejesus/icons/checkbox-active.svg");
+  display: flex;
+  width: 7.5px;
+  height: 5px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.filter-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .products {
