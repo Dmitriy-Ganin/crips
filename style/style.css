@@ -565,8 +565,40 @@ button {
 .benefits-wrapper {
   width: 100%;
   height: 100px;
-  display: flex;
   background: rgba(240, 242, 242, 1);
+  display: flex;
+}
+
+.benefits-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.benefits-label {
+  display: flex;
+  align-items: center
+}
+
+.benefits-check {
+  width: 30px;
+  height: 30px;
+  background-image: url("/bejesus/icons/Benefits-check.png");
+  background-size: 18px 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-text {
+  padding-left: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
 }
 
 .footer-wrapper {
