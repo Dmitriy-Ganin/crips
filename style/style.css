@@ -731,13 +731,23 @@ main {
 }
 
 @media (max-width: 768px) {
-   header {
+  header {
     padding: 9px 14px;
     align-items: center;
+    position: relative;
   }
 
   .burger-menu {
     display: flex;
+  }
+
+  .right-menu-left,
+  .search-favorites-img,
+  .shopping-cart,
+  .burger-checkbox,
+  .nav-list li.active::after,
+  .nav-list .search-item {
+    display: none;
   }
 
   .burger-icon {
@@ -757,12 +767,6 @@ main {
     display: block;
   }
 
-  logo {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-  }
-
   .logo {
     display: flex;
     justify-content: center;
@@ -773,11 +777,41 @@ main {
     height: 31px;
   }
 
-  .nav-list,
-  .right-menu-left,
-  .search-favorites-img,
-  .shopping-cart {
+  .nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px 0;
+  }
+
+  header:has(.burger-checkbox:checked) .nav {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+  }
+
+  .nav-list li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list li.active {
+    border-left: 2px solid rgba(235, 87, 87, 1);
   }
 
   .search-icon-mobile {
