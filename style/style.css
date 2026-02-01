@@ -901,4 +901,9 @@ main {
   .arrow {
     width: 100%;
   }
+
+  .button {
+    width: 128px;
+    height: 43px;
+  }
 }
