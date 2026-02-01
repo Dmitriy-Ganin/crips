@@ -884,4 +884,21 @@ main {
     width: 138px;
     height: 207px;
   }
+
+  .hero-slider {
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+  }
+
+  .slider-navBoxes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow {
+    width: 100%;
+  }
 }
