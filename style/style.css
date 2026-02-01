@@ -224,10 +224,14 @@ main {
 }
 
 .hero-right-left {
+  width: 416px;
+  height: 620px;
   justify-self: start;
 }
 
 .hero-right-right {
+  width: 474px;
+  height: 708px;
   justify-self: end;
 }
 
@@ -821,5 +825,67 @@ main {
   .search-mobile-img {
     width: 20px;
     height: 20px;
+  }
+
+  .hero {
+    height: 496px;
+    background-image: url('../bejesus/images/Background-hero-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .hero-block {
+    margin: 0;
+    padding-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .hero-left {
+    padding-top: 24px;
+    order: 2;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .border-element {
+    display: none;
+  }
+
+  .border-text {
+    margin-top: 0;
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  .hero-right {
+    order: 1;
+    width: 208px;
+    height: 207px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .hero-right-left {
+    width: 123px;
+    height: 183px;
+    justify-self: start;
+  }
+
+  .hero-right-right {
+    width: 138px;
+    height: 207px;
+    justify-self: end;
   }
 }
