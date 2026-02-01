@@ -858,34 +858,30 @@ main {
 
   .border-text {
     margin-top: 0;
-    font-family: Oswald;
-    font-weight: 600;
     font-size: 32px;
     line-height: 35px;
     letter-spacing: 0%;
     text-align: center;
-    text-transform: uppercase;
+  }
 
+  .hero-left span.hero-percentage {
+    color: rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 0;
   }
 
   .hero-right {
     order: 1;
     width: 208px;
     height: 207px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
   }
 
   .hero-right-left {
     width: 123px;
     height: 183px;
-    justify-self: start;
   }
 
   .hero-right-right {
     width: 138px;
     height: 207px;
-    justify-self: end;
   }
 }
